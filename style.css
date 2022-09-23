@@ -1,0 +1,267 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: ease all 0.5s;
+  -webkit-transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -ms-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+}
+
+:root {
+  --main-color: #247cff;
+  --second-color: #2b5464;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  align-content: center;
+  border: 1px solid;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================== */
+/* 
+ */
+
+header {
+  position: fixed;
+  left: 0;
+  z-index: 999;
+  background: hsl(227deg 14% 41% / 64%);
+  /* hsl(239deg 64% 65%); */
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 2%;
+  border: none;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  min-height: 99px;
+}
+
+header .container::after {
+  position: absolute;
+  content: "";
+  background-color: #a2a2a2;
+  width: calc(100% - 30px);
+  height: 1.5px;
+  bottom: 0;
+  left: 15px;
+  z-index: -1;
+}
+
+header .toggle-menu {
+  display: none;
+  color: white;
+}
+
+header .logo {
+}
+
+header .logo img {
+  width: 90px;
+  border-radius: 50%;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header nav .List-item {
+  display: flex;
+}
+
+header nav input {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  header .toggle-menu {
+    display: block;
+    font-size: 25px;
+  }
+  header nav .List-item {
+    display: none;
+  }
+  header nav #menu:checked ~ .List-item {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    background-color: rgb(0 0 0 / 50%);
+  }
+  /* مرضاش يشتغل بالصيغة دي 
+            header nav #menu:checked+.List-item */
+}
+
+header nav .List-item li a.active,
+header nav .List-item li a:hover {
+  border-bottom: 3px solid #fff;
+  font-size: 16px;
+}
+
+header nav .List-item li {
+}
+
+header nav .List-item li a {
+  padding: 40px 10px;
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+header .icon {
+  border-left: 1px solid white;
+  font-size: 20px;
+  margin-left: 30px;
+  width: 40px;
+  height: 30px;
+  position: relative;
+}
+
+header .icon i {
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*  */
+
+/* =========================== */
+.landing {
+  background-image: url("imgs/landingimg.jpg");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.landing::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgb(0 0 0 / 60%);
+  /* z-index: -1; */
+}
+
+.landing .text {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  padding: 50px;
+  background-color: hsl(227deg 14% 41% / 64%);
+  z-index: 4;
+}
+
+@media (max-width: 767px) {
+  .landing .text {
+    width: 100%;
+  }
+  header nav .List-item li {
+    font-weight: bold;
+    background: #ddddddb3;
+  }
+}
+
+.landing .text .content {
+  max-width: 500px;
+}
+
+.landing .text .content p {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.landing .text .content h2 {
+  font-size: 32px;
+  font-weight: normal;
+  /* line-height: 1.5; */
+  margin-bottom: 20px;
+}
+
+.landing .change-background {
+  z-index: 4;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  color: white;
+}
+.landing .landImg img {
+  width: 100%;
+}
+/*  */
+.videoIntro {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+/* Small */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+::selection {
+  background-color: var(--second-color);
+  color: white;
+}
