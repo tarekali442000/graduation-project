@@ -24,7 +24,7 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 header {
   display: flex;
@@ -368,6 +368,7 @@ header .icon i {
 }
 .article-Text pre {
   direction: rtl;
+  text-align: right;
   font-weight: bold;
   font-family: sans-serif;
 }
@@ -394,7 +395,7 @@ header .icon i {
   bottom: 20px;
   right: 20px;
   z-index: 999;
-  background: var(--second-color);
+  background: hsl(227deg 14% 41%);
   width: 50px;
   height: 50px;
   display: flex;
