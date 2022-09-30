@@ -25,3 +25,26 @@ window.onscroll = function scrollFixed() {
   }
 };
 //
+// start tarek js code
+var swiper = new Swiper(".mySwiper", {
+  loop: false,
+  autoplay: true,
+  autoplayTimeout: 1000,
+  autoplayHoverPause: true,
+
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 300,
+    modifier: 0.5,
+    slideShadows: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+// end tarek js code

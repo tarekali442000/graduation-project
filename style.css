@@ -9,9 +9,11 @@ body {
   -ms-transition: ease all 0.5s;
   -o-transition: ease all 0.5s;
 }
-
+body {
+  /* background-color: antiquewhite; */
+}
 :root {
-  --main-color: #247cff;
+  --main-color: hsl(227deg 14% 41% / 64%);
   --second-color: #2b5464;
 }
 
@@ -187,7 +189,7 @@ header .icon i {
   transform: translateY(-50%);
   color: white;
   padding: 50px;
-  background-color: hsl(227deg 14% 41% / 64%);
+  background-color: var(--main-color);
   z-index: 4;
 }
 
@@ -388,6 +390,89 @@ header .icon i {
   width: 50%;
 }
 /*  */
+/* start tarek css code slider */
+.swiper {
+  width: 100%;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+.card {
+  width: 22em;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+  padding: 2em 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2em;
+}
+.swiper-slide:not(.swiper-slide-active) {
+  filter: blur(1px);
+}
+.card_image {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid var(--main-color);
+  padding: 3px;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+.card_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card_title {
+  font-size: 1.5em;
+  font-weight: 500;
+  position: relative;
+  top: 0.2em;
+}
+
+.card_name {
+  color: var(--main-color);
+}
+.card_text {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+
+.card_btn {
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 0.5em;
+  cursor: pointer;
+}
+.card_btn:hover {
+  letter-spacing: 1px;
+}
+.card_btn a {
+  color: #fff;
+}
+.card_btn a:hover {
+  color: #fff;
+}
+/*end tarek css code slider */
 /*  */
 
 .fixedTop {
@@ -534,3 +619,6 @@ header .icon i {
 }
 
 /*  */
+footer {
+  background-color: #5a6077;
+}
