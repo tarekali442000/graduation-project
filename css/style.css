@@ -42,14 +42,15 @@ header {
 
 /* =========================== */
 /* 
+Mohamed Karam home style
  */
 
-header {
+/* header {
   position: fixed;
   left: 0;
   z-index: 999;
   background: hsl(227deg 14% 41% / 64%);
-  /* hsl(239deg 64% 65%); */
+ 
   width: 100%;
   border-radius: 50px;
   margin-top: 2%;
@@ -120,8 +121,7 @@ header nav input {
     width: 100%;
     background-color: rgb(0 0 0 / 50%);
   }
-  /* مرضاش يشتغل بالصيغة دي 
-            header nav #menu:checked+.List-item */
+ 
 }
 
 header nav .List-item li a.active,
@@ -157,12 +157,14 @@ header .icon i {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 
-/*  */
+/* 
+Mohamed Karam landing style
+ */
 
 /* =========================== */
-.landing {
+/* .landing {
   background-image: url("imgs/landingimg.jpg");
   min-height: 100vh;
   background-position: center;
@@ -178,7 +180,6 @@ header .icon i {
   height: 100%;
   top: 0;
   background-color: rgb(0 0 0 / 60%);
-  /* z-index: -1; */
 }
 
 .landing .text {
@@ -215,7 +216,6 @@ header .icon i {
 .landing .text .content h2 {
   font-size: 32px;
   font-weight: normal;
-  /* line-height: 1.5; */
   margin-bottom: 20px;
 }
 
@@ -232,8 +232,129 @@ header .icon i {
 }
 .landing .landImg img {
   width: 100%;
+} */
+/* Mohamed Mostafa home and landing style  */
+#home {
+  background-image: url(../imgs/landImg.jpg);
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
-/*  */
+#home .layer {
+  background-color: rgba(0, 0, 0, 0.69);
+}
+
+.btn {
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: black !important;
+  cursor: pointer;
+}
+#home .nav-link {
+  color: black;
+  transition: color 0.5s;
+}
+#home .nav-link:hover {
+  color: #e65f78;
+  cursor: pointer;
+}
+
+.home-content p {
+  color: rgba(255, 255, 255, 0.75);
+}
+.settings-icon {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  background-color: #2b2424;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.up-icon {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #e65f78;
+  z-index: 999;
+  color: #fff;
+  cursor: pointer;
+}
+#home .down-icon {
+  height: 45px;
+  width: 25px;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 15px;
+  animation: scroll 3s ease-in-out infinite;
+}
+#home .down-icon::after {
+  content: "";
+  width: 3px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 10px;
+  transform: translate(-50%);
+}
+@keyframes scroll {
+  0% {
+    bottom: 50px;
+  }
+
+  10% {
+    bottom: 100px;
+  }
+
+  20% {
+    bottom: 50px;
+  }
+
+  30% {
+    bottom: 80px;
+  }
+
+  40% {
+    bottom: 50px;
+  }
+
+  50% {
+    bottom: 70px;
+  }
+
+  60% {
+    bottom: 50px;
+  }
+
+  70% {
+    bottom: 60px;
+  }
+
+  80% {
+    bottom: 50px;
+  }
+
+  90% {
+    bottom: 50px;
+  }
+
+  100% {
+    bottom: 50px;
+  }
+}
+/* Mohamed Mostafa home and landing style  */
 .videoIntro {
   display: flex;
   justify-content: center;
