@@ -18,7 +18,7 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 ul {
@@ -245,7 +245,7 @@ Mohamed Karam landing style
   background-color: rgba(0, 0, 0, 0.69);
 }
 
-.btn {
+/* .btn {
   padding: 10px 15px;
   border: 2px solid #fff;
   color: #fff;
@@ -256,7 +256,7 @@ Mohamed Karam landing style
   border-color: #fff !important;
   color: black !important;
   cursor: pointer;
-}
+} */
 #home .nav-link {
   color: black;
   transition: color 0.5s;
@@ -309,6 +309,11 @@ Mohamed Karam landing style
   bottom: 10px;
   transform: translate(-50%);
 }
+/*  */
+.pill {
+  background-color: #ffffff7d !important;
+}
+/*  */
 @keyframes scroll {
   0% {
     bottom: 50px;
