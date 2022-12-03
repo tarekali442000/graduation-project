@@ -1,0 +1,34 @@
+#home {
+  background-image: unset;
+  /* background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center; */
+  position: relative;
+}
+#home .layer {
+  background-color: rgba(0, 0, 0, 0.69);
+}
+/*  */
+.path {
+}
+.path .title {
+  text-align: center;
+  color: #515e3b;
+  background: #caf0f8;
+  border-radius: 3rem;
+  width: 50%;
+  margin: 10% auto;
+}
+.hard {
+  background-image: url(../imgs/hard.jpg);
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.path .article {
+  background: #fff;
+  padding: 2%;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px auto;
+}
