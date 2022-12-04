@@ -1,29 +1,25 @@
-#home {
-  background-image: unset;
-  /* background-size: 100% 100%;
-  background-size: cover;
-  background-position: center center; */
-  position: relative;
-}
-#home .layer {
-  background-color: rgba(0, 0, 0, 0.69);
-}
-/*  */
-.path {
-}
-.path .title {
+.path .h-title {
   text-align: center;
   color: #515e3b;
   background: #caf0f8;
   border-radius: 3rem;
   width: 50%;
-  margin: 10% auto;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
 }
 .hard {
-  background-image: url(../imgs/hard.jpg);
   background-size: 100% 100%;
   background-size: cover;
   background-position: center center;
+  padding: 30px;
+}
+.hardware {
+  background-image: url(../imgs/hard.jpg);
+}
+.software {
+  background-color: #5a6077;
 }
 .path .article {
   background: #fff;
@@ -31,4 +27,7 @@
   font-size: 20px;
   font-weight: bold;
   margin: 10px auto;
+}
+.navbar {
+  position: sticky;
 }
